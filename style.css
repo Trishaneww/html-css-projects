@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(160, 210, 254);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav a {
+    margin: 0 2% 0 2%;
+    text-decoration: none;
+    color:black;
+}
