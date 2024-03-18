@@ -1,0 +1,121 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/prime-wallpaper.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: bisque;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px solid black;
+    border: 2px solid black;
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 200px;
+    margin-top: 20%;
+    color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.gallery-section {
+    text-align: center;
+    color:rgb(255, 84, 84);
+    font-size: 60px;
+    height: 100vh;
+}
+
+.gallery {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    box-shadow: 2px 2px  #888888;
+    margin: 2%;
+    width:200px;
+    transition: 200ms;
+}
+
+.contact-form {
+    background-color:rgb(255, 140, 140);
+    padding: 50px 20px;
+    border-radius: 15px;
+    width:800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.contact-page h2 {
+    color:rgb(255, 84, 84);
+    font-size: 60px;
+}
+
+
+.contact-form label {
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+.contact-form input {
+    width: 300px;
+    height:50px;
+    border-radius: 10px;
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    background-color:rgb(255, 140, 140);
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-top: 5%;
+}
+
+button:hover {
+    cursor:pointer;
+}
+
+img:hover {
+    cursor: pointer;
+    opacity: 0.3;
+}
