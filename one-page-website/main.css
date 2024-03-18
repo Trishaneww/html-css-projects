@@ -1,0 +1,330 @@
+body {
+     font-family:'Open Sans', sans-serif;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+}
+
+li:hover a {
+    border-bottom: 3px solid #DB7A4E;
+    transition: 200ms;
+}
+
+a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color:black;
+}
+
+button {
+    height: 40px;
+    width: 160px;
+    border-radius: 50px;
+    background-color: #DB7A4E;
+    color: white;
+    border:none;
+    margin-top: 3%;
+    font-size: 12px;
+    transition: 200ms;
+}
+
+h2 {
+  color:#335576;
+  margin-left: 6%;
+}
+
+button:hover {
+  background-color: white;
+  border: 3px solid #DB7A4E;
+  color:#DB7A4E;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------- navbar ----------------------------------------------------------*/
+
+.c-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 10em 0.5em 10em;
+}
+
+.c-nav__menu {
+  list-style: none;
+  display: flex;
+}
+
+.c-nav__underline {
+  border-bottom: 3px solid #DB7A4E;
+}
+
+.c-nav__logo {
+  font-size: 19px;
+  color:#335576;
+  font-weight: 700;
+}
+
+/* ------------------------------------------------------- home ----------------------------------------------------------*/
+
+.c-hero {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0em 10em 11em;
+    background-color: #FEFAF5;
+}
+
+.c-hero img {
+    margin-top: 15%;
+    width: 65%;
+}
+
+.c-hero__info {
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-right: 10%;
+}
+
+.c-hero__info h1 {
+  color:#335576;
+  font-size: 45px;
+}
+
+.c-hero_info p {
+    color:#335576;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.c-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+}
+
+.c-gallery__card {
+    display: flex;
+    justify-content: right;
+    align-items:end;
+    background-size: cover;
+    height: 500px;
+    width: 300px;
+    margin: 2%;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    color:white;
+    transition: 200ms;
+}
+
+.c-gallery__card:hover {
+  transform: scale(1.1,1.1);
+  border: none;
+}
+
+#hawaii {
+    background-image: url(./assets/images/hawaii.jpg);
+}
+
+#iceland {
+    background-image: url(./assets/images/iceland.jpg);
+}
+
+#greece {
+    background-image: url(./assets/images/greece.jpg);
+}
+
+/* ------------------------------------------------------- footer ----------------------------------------------------------*/
+
+.c-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #FEFAF5;
+  flex-wrap: wrap;
+}
+
+.c-footer p {
+  font-size: 19px;
+  margin-right: 10px;
+}
+
+.c-footer img {
+  width: 20px;
+}
+
+.c-footer__groups {
+  margin: 1em;
+}
+
+.info {
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.info h4 {
+  color:#DB7A4E;
+  font-size: 12px;
+}
+
+.c-footer__socials {
+  margin-top: 1.5%;
+}
+
+.c-footer__socials h2 {
+  margin-bottom: 33%;
+}
+
+#facebook {
+  width: 12px;
+}
+
+/* ------------------------------------------------------- responsive ----------------------------------------------------------*/
+
+@media screen and (max-width: 1280px) {
+  .c-footer__socials h2 {
+    margin-bottom: 42%;
+  }
+}
+
+@media screen and (max-width: 972px) {
+  .c-hero {
+    flex-direction:column-reverse;
+    justify-content: center;
+    padding: 3em 0em 10em 0em;
+    text-align: center;
+  }
+
+  .c-hero img {
+    margin: 2%;
+    width: 30%;
+  }
+
+  .c-hero__info {
+    justify-content: center;
+    align-items: center;
+    margin-right: 0%;
+  }
+
+  .c-hero__info h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .c-nav {
+    justify-content: center;
+  }
+  .c-footer {
+    justify-content: left;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .c-nav a {
+    font-size: 14px;
+    padding: 5px 5px;
+  }
+
+  .c-footer {
+      flex-direction: column;
+      justify-content: center;
+      background-color: #FEFAF5;
+      flex-wrap: wrap;
+      padding-bottom: 100px;
+  }
+
+  .c-hero__info h1 {
+    font-size: 22px;
+  }
+
+  .c-hero__info p {
+    font-size: 12px;
+  }
+
+  .c-footer__socials {
+    margin-top: 1.5%;
+  }
+  
+  .c-footer__socials h2 {
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .c-nav a {
+    font-size: 14px;
+    padding: 5px 5px;
+  }
+
+  .c-footer {
+      flex-direction: column;
+      justify-content: center;
+      background-color: #FEFAF5;
+      flex-wrap: wrap;
+      padding-bottom: 100px;
+  }
+
+  .c-gallery__card {
+    height: 350px;
+    width: 250px;
+}
+
+  .c-hero__info h1 {
+    font-size: 22px;
+  }
+
+  .c-hero__info p {
+    font-size: 12px;
+  }
+
+  .c-footer__socials {
+    margin-top: 1.5%;
+  }
+  
+  .c-footer__socials h2 {
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .c-nav {
+      padding: 0.5em 8em 0.5em 8em;
+  }
+  .c-nav a {
+      font-size: 12px;
+  }
+  .c-gallery__card {
+    height: 350px;
+    width: 200px;
+}
+}
+
+@media screen and (max-width: 280px) {
+  .c-gallery__card {
+    height: 300px;
+    width: 150px;
+  }
+  .c-footer h4 {
+      font-size: 8px;
+  }
+
+  .c-footer p {
+      font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 279px) {
+    .c-nav {
+      padding: 0.5em 8em 0.5em 8em;
+  }
+
+  .c-nav a {
+      font-size: 10px;
+  }
+}
