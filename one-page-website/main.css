@@ -3,6 +3,7 @@ body {
      margin: 0;
      padding: 0;
      overflow-x: hidden;
+     scroll-behavior: smooth;
 }
 
 li:hover a {
@@ -138,6 +139,62 @@ button:hover {
 #greece {
     background-image: url(./assets/images/greece.jpg);
 }
+
+.contact-form {
+  border: 2px solid #DB7A4E;
+  padding: 50px 20px;
+  border-radius: 15px;
+  width:1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+
+.contact-page h2 {
+  color:#DB7A4E;
+  font-size: 60px;
+}
+
+
+.contact-form label {
+  font-size: 16px;
+  margin-top: 2%;
+}
+
+.contact-form input {
+  border: 2px solid #DB7A4E;
+  width: 300px;
+  height:50px;
+  border-radius: 10px;
+}
+
+.contact-page button {
+  width: 300px;
+  height: 50px;
+  background-color:#DB7A4E;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin-top: 5%;
+}
+
+button:hover {
+  background-color: white;
+  border: 3px solid #DB7A4E;
+  color:#DB7A4E;
+  cursor: pointer;
+}
+
 
 /* ------------------------------------------------------- footer ----------------------------------------------------------*/
 
