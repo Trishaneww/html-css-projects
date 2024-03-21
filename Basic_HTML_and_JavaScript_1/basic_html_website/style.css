@@ -104,7 +104,19 @@ button:hover {
     cursor:pointer;
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  padding-top: 10%;
+}
 
+.home p {
+  text-align: center;
+  width: 70%;
+}
 .gallery {
     display: flex;
     flex-direction: column;
