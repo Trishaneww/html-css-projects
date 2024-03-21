@@ -149,8 +149,8 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2%;
 }
-
 
 .contact-page {
   display: flex;
@@ -160,12 +160,10 @@ button:hover {
   margin-bottom: 5%;
 }
 
-
 .contact-page h2 {
   color:#DB7A4E;
   font-size: 60px;
 }
-
 
 .contact-form label {
   font-size: 16px;
